@@ -67,6 +67,30 @@ syncClipImageWidth();
 setCompare(50);
 window.addEventListener('resize', syncClipImageWidth);
 
+/* ---- Scrolling tab title ---- */
+(function(){
+  const baseText = 'NADELOADER — fast, lightweight, always up to date • ';
+  const text = baseText.repeat(2); // repeat so the scroll loops smoothly
+  let pos = 0;
+  const speedMs = 260;
+
+  function tick(){
+    document.title = text.slice(pos) + text.slice(0, pos);
+    pos = (pos + 1) % baseText.length;
+  }
+
+  let timer = setInterval(tick, speedMs);
+
+  // pause the scroll while the tab isn't visible (saves a bit of CPU, keeps it tidy)
+  document.addEventListener('visibilitychange', () => {
+    if (document.hidden) {
+      clearInterval(timer);
+    } else {
+      timer = setInterval(tick, speedMs);
+    }
+  });
+})();
+
 compareRange.addEventListener('input', (e) => setCompare(e.target.value));
 
 /* allow dragging directly on the image, not just the invisible range track */
