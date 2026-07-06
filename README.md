@@ -1,4 +1,4 @@
-# Nadeloader — site (v3)
+# Nadeloader — site (v4, night-sky palette)
 
 Static site: `index.html` + `css/style.css` + `js/script.js` + `img/` + `.nojekyll`.
 Default language: English. Dark theme with violet/teal glow, matching the "v1" look you liked, plus more animation and a before/after compare slider instead of the mock demo window.

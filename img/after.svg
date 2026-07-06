@@ -5,13 +5,13 @@
       <stop offset="100%" stop-color="#0c0d11"/>
     </linearGradient>
     <radialGradient id="glow2" cx="50%" cy="50%" r="60%">
-      <stop offset="0%" stop-color="#7C5CFC" stop-opacity="0.55"/>
-      <stop offset="100%" stop-color="#7C5CFC" stop-opacity="0"/>
+      <stop offset="0%" stop-color="#B84FE0" stop-opacity="0.55"/>
+      <stop offset="100%" stop-color="#B84FE0" stop-opacity="0"/>
     </radialGradient>
   </defs>
   <rect width="960" height="540" fill="url(#bg2)"/>
   <rect width="960" height="540" fill="url(#glow2)"/>
-  <g stroke="#7C5CFC" stroke-width="1" opacity="0.35">
+  <g stroke="#B84FE0" stroke-width="1" opacity="0.35">
     <line x1="0" y1="135" x2="960" y2="135"/>
     <line x1="0" y1="270" x2="960" y2="270"/>
     <line x1="0" y1="405" x2="960" y2="405"/>
@@ -19,8 +19,8 @@
     <line x1="480" y1="0" x2="480" y2="540"/>
     <line x1="720" y1="0" x2="720" y2="540"/>
   </g>
-  <circle cx="480" cy="270" r="90" fill="none" stroke="#33D6C0" stroke-width="2.5"/>
-  <circle cx="480" cy="270" r="60" fill="none" stroke="#7C5CFC" stroke-width="2"/>
+  <circle cx="480" cy="270" r="90" fill="none" stroke="#FF6FAE" stroke-width="2.5"/>
+  <circle cx="480" cy="270" r="60" fill="none" stroke="#B84FE0" stroke-width="2"/>
   <text x="480" y="280" text-anchor="middle" font-family="monospace" font-size="20" fill="#EDEEF3" letter-spacing="4">ENHANCED</text>
-  <text x="480" y="500" text-anchor="middle" font-family="monospace" font-size="13" fill="#33D6C0" letter-spacing="2">FPS: 240 · CLEAR VISIBILITY</text>
+  <text x="480" y="500" text-anchor="middle" font-family="monospace" font-size="13" fill="#FF6FAE" letter-spacing="2">FPS: 240 · CLEAR VISIBILITY</text>
 </svg>
