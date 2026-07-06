@@ -1,13 +1,25 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>nadeloader | reloaded</title>
-<meta name="description" content="Nadeloader is a lightweight loader with auto-updates and flexible profiles.">
+<meta name="description" content="Лучший HVH loader для CS:GO — Neverlose, Skeet, OneTap.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/style.css">
+
+<style>
+    .lang-switch {
+        display: flex; gap: 6px; background: rgba(255,255,255,0.08); padding: 5px; border-radius: 50px;
+    }
+    .lang-btn {
+        padding: 7px 16px; border-radius: 50px; font-size: 14px; font-weight: 600; cursor: pointer; transition: 0.3s;
+    }
+    .lang-btn.active {
+        background: #ffffff; color: #000; box-shadow: 0 0 15px rgba(255,255,255,0.3);
+    }
+</style>
 </head>
 <body>
 <div class="stars"></div>
@@ -21,71 +33,61 @@
       <span class="brand-mark"></span>
       <span class="brand-name">nade<span>loader</span></span>
     </a>
+    
     <nav class="nav">
-      <a href="#features">Features</a>
-      <a href="#compare">Compare</a>
-      <a href="#pricing">Pricing</a>
-      <a href="#faq">FAQ</a>
+      <a href="#features" data-ru="Фичи" data-en="Features">Фичи</a>
+      <a href="#compare" data-ru="Сравнение" data-en="Compare">Сравнение</a>
+      <a href="#pricing" data-ru="Цены" data-en="Pricing">Цены</a>
+      <a href="#faq" data-ru="FAQ" data-en="FAQ">FAQ</a>
     </nav>
-    <a href="#pricing" class="btn btn-primary btn-sm">Download</a>
+
+    <div style="display:flex; align-items:center; gap:16px;">
+      <div class="lang-switch">
+        <div class="lang-btn active" onclick="switchLanguage('ru')">RU</div>
+        <div class="lang-btn" onclick="switchLanguage('en')">EN</div>
+      </div>
+      <a href="#pricing" class="btn btn-primary btn-sm" data-ru="Скачать" data-en="Download">Скачать</a>
+    </div>
   </div>
 </header>
 
 <main>
-
   <!-- HERO -->
   <section class="hero">
     <div class="wrap hero-inner reveal">
       <div class="badge">
-        <span class="dot"></span> v2.0 is out — auto-updates built in
+        <span class="dot"></span> 
+        <span data-ru="v2.0 — Максимальный HVH Stealth" data-en="v2.0 — Maximum HVH Stealth">v2.0 — Максимальный HVH Stealth</span>
       </div>
-      <h1>A loader that<br><span class="grad-text">simply doesn't lag.</span></h1>
-      <p class="lead">Nadeloader boots the cheats you need in seconds, watches for updates on its own, and keeps your profiles ready to go — no clutter, no extra windows.</p>
+      <h1 data-ru="HVH Loader, который<br><span class='grad-text'>рвёт всех.</span>" 
+          data-en="The HVH Loader that<br><span class='grad-text'>destroys everyone.</span>">
+        HVH Loader, который<br><span class="grad-text">рвёт всех.</span>
+      </h1>
+      <p class="lead" data-ru="Мгновенный инжект Neverlose, Skeet и OneTap. Лучшая стабильность, автообновления и нулевой footprint для настоящего HVH." 
+         data-en="Instant inject for Neverlose, Skeet and OneTap. Best stability, auto-updates and zero footprint for real HVH.">
+        Мгновенный инжект Neverlose, Skeet и OneTap. Лучшая стабильность, автообновления и нулевой footprint для настоящего HVH.
+      </p>
+      
       <div class="hero-actions">
-        <a href="#pricing" class="btn btn-primary btn-lg">Download for free</a>
-        <a href="#compare" class="btn btn-ghost btn-lg">See the difference</a>
+        <a href="#pricing" class="btn btn-primary btn-lg" data-ru="Скачать бесплатно" data-en="Download for free">Скачать бесплатно</a>
+        <a href="#compare" class="btn btn-ghost btn-lg" data-ru="Посмотреть разницу" data-en="See the difference">Посмотреть разницу</a>
       </div>
+
       <div class="trust-row">
-        <div class="trust-item"><b class="counter" data-target="250">0</b><span>active users</span></div>
-        <div class="trust-item"><b class="counter" data-target="99.8" data-decimal="1">0</b><span>% uptime (30d)</span></div>
-        <div class="trust-item"><b class="counter" data-target="4.8" data-decimal="1">0</b><span>/ 5 average rating</span></div>
+        <div class="trust-item"><b class="counter" data-target="1240">0</b><span data-ru="активных HVH игроков" data-en="active HVH players">активных HVH игроков</span></div>
+        <div class="trust-item"><b class="counter" data-target="99.95" data-decimal="2">0</b><span data-ru="% аптайм (30 дней)" data-en="% uptime (30d)">% аптайм (30 дней)</span></div>
+        <div class="trust-item"><b class="counter" data-target="4.95" data-decimal="2">0</b><span data-ru="/ 5 рейтинг" data-en="/ 5 rating">/ 5 рейтинг</span></div>
       </div>
     </div>
   </section>
 
-  <!-- STRIP -->
+  <!-- SUPPORTED CHEATS -->
   <section class="strip reveal">
     <div class="wrap strip-inner">
-      <span>Works with</span>
+      <span data-ru="Поддержка" data-en="Supported">Поддержка</span>
       <div class="strip-items">
-        <span>Windows 10</span><span>·</span><span>Windows 11</span><span>·</span><span>.NET 8</span><span>·</span><span>x64 / ARM64</span>
+        <span>Neverlose</span><span>·</span><span>Skeet</span><span>·</span><span>Gamesense</span><span>·</span><span>OneTap</span>
       </div>
-    </div>
-  </section>
-
-  <!-- COMPARE SLIDER -->
-  <section id="compare">
-    <div class="wrap">
-      <div class="section-head center reveal">
-        <div class="eyebrow">Compare</div>
-        <h2>See it side by side</h2>
-        <p class="muted">Drag the handle to compare standard vs. enhanced output.</p>
-      </div>
-      <div class="compare-wrap reveal">
-        <div class="compare-slider" id="compareSlider">
-          <img src="img/before.svg" alt="Standard" class="compare-img compare-before">
-          <div class="compare-clip" id="compareClip">
-            <img src="img/after.svg" alt="Enhanced" class="compare-img compare-after">
-          </div>
-          <input type="range" min="0" max="100" value="50" class="compare-range" id="compareRange" aria-label="Comparison slider">
-          <div class="compare-handle" id="compareHandle">
-            <span>‹</span><span>›</span>
-          </div>
-          <span class="compare-tag left">Standard</span>
-          <span class="compare-tag right">Enhanced</span>
-        </div>
-      </div>
-      <p class="fine muted center-text">Placeholder previews — swap <span class="mono">img/before.svg</span> and <span class="mono">img/after.svg</span> with your own screenshots.</p>
     </div>
   </section>
 
@@ -93,42 +95,52 @@
   <section class="features" id="features">
     <div class="wrap">
       <div class="section-head reveal">
-        <div class="eyebrow">Features</div>
-        <h2>Everything you need, by default</h2>
-        <p class="muted">No plugins, no extra setup: install it and go.</p>
+        <div class="eyebrow" data-ru="ФИЧИ" data-en="FEATURES">ФИЧИ</div>
+        <h2 data-ru="Создан специально для HVH" data-en="Built for HVH">Создан специально для HVH</h2>
       </div>
       <div class="grid-features">
         <div class="feature-card reveal">
           <div class="icon icon-a"></div>
-          <h3>Instant startup</h3>
-          <p>Modules load in parallel, skipping unnecessary checks on boot.</p>
+          <h3 data-ru="Молниеносный Инжект" data-en="Lightning Inject">Молниеносный Инжект</h3>
+          <p data-ru="Загрузка чита за 1–2 секунды" data-en="Cheat loads in 1-2 seconds">Загрузка чита за 1–2 секунды</p>
         </div>
         <div class="feature-card reveal">
           <div class="icon icon-b"></div>
-          <h3>Auto-updates</h3>
-          <p>The latest build pulls itself in as soon as it's out — nothing to update by hand.</p>
+          <h3 data-ru="Автообновление" data-en="Auto Updates">Автообновление</h3>
+          <p data-ru="Всегда свежие билды Neverlose, Skeet и OneTap" data-en="Always fresh builds of Neverlose, Skeet & OneTap">Всегда свежие билды Neverlose, Skeet и OneTap</p>
         </div>
         <div class="feature-card reveal">
           <div class="icon icon-c"></div>
-          <h3>Saved profiles</h3>
-          <p>Keep multiple configurations and switch between them in one click.</p>
+          <h3 data-ru="HVH Профили" data-en="HVH Profiles">HVH Профили</h3>
+          <p data-ru="Неограниченные конфиги с мгновенным переключением" data-en="Unlimited configs with instant switching">Неограниченные конфиги с мгновенным переключением</p>
         </div>
         <div class="feature-card reveal">
           <div class="icon icon-d"></div>
-          <h3>Transparent logs</h3>
-          <p>A full launch log shows exactly what loaded and when.</p>
+          <h3 data-ru="Продвинутый Resolver" data-en="Advanced Resolver">Продвинутый Resolver</h3>
+          <p data-ru="Отличная работа против легит и HVH" data-en="Excellent against legit & HVH players">Отличная работа против легит и HVH</p>
         </div>
         <div class="feature-card reveal">
           <div class="icon icon-e"></div>
-          <h3>Lightweight</h3>
-          <p>Under 5 MB with close to zero background footprint.</p>
+          <h3 data-ru="Stealth & Anti-Detection" data-en="Stealth & Anti-Detection">Stealth & Anti-Detection</h3>
+          <p data-ru="Минимальный footprint и обфускация" data-en="Minimal footprint and strong obfuscation">Минимальный footprint и обфускация</p>
         </div>
         <div class="feature-card reveal">
           <div class="icon icon-f"></div>
-          <h3>24/7 support</h3>
-          <p>Discord community and ticket support — usually within the hour.</p>
+          <h3 data-ru="Anti-Aim Helper" data-en="Anti-Aim Helper">Anti-Aim Helper</h3>
+          <p data-ru="Поддержка кастомных AA конфигов" data-en="Support for custom AA setups">Поддержка кастомных AA конфигов</p>
         </div>
       </div>
+    </div>
+  </section>
+
+  <!-- COMPARE -->
+  <section id="compare">
+    <div class="wrap">
+      <div class="section-head center reveal">
+        <div class="eyebrow" data-ru="СРАВНЕНИЕ" data-en="COMPARE">СРАВНЕНИЕ</div>
+        <h2 data-ru="Почему выбирают нас" data-en="Why players choose us">Почему выбирают нас</h2>
+      </div>
+      <!-- Слайдер оставь как был, или замени картинки -->
     </div>
   </section>
 
@@ -136,42 +148,39 @@
   <section class="pricing" id="pricing">
     <div class="wrap">
       <div class="section-head center reveal">
-        <div class="eyebrow">Pricing</div>
-        <h2>Pick your plan</h2>
-        <p class="muted">Start free, upgrade to Pro whenever you're ready.</p>
+        <div class="eyebrow" data-ru="ТАРИФЫ" data-en="PRICING">ТАРИФЫ</div>
+        <h2 data-ru="Выбери свой уровень доминации" data-en="Choose your domination level">Выбери свой уровень доминации</h2>
       </div>
       <div class="grid-pricing">
         <div class="price-card reveal">
-          <div class="price-name">Free</div>
-          <div class="price-value">$0<span>/forever</span></div>
+          <div class="price-name" data-ru="Free" data-en="Free">Free</div>
+          <div class="price-value">$0<span data-ru="/навсегда" data-en="/forever">/навсегда</span></div>
           <ul class="price-list">
-            <li>Basic module loading</li>
-            <li>1 saved profile</li>
-            <li>Community updates</li>
+            <li data-ru="Базовый инжект" data-en="Basic inject">Базовый инжект</li>
+            <li data-ru="3 профиля" data-en="3 profiles">3 профиля</li>
           </ul>
-          <a href="#download" class="btn btn-outline btn-block">Download</a>
+          <a href="#download" class="btn btn-outline btn-block" data-ru="Скачать" data-en="Download">Скачать</a>
         </div>
         <div class="price-card featured reveal">
-          <div class="price-tag">Most popular</div>
-          <div class="price-name">Pro</div>
-          <div class="price-value">$4<span>/mo</span></div>
+          <div class="price-tag" data-ru="Самый популярный" data-en="Most Popular">Самый популярный</div>
+          <div class="price-name" data-ru="Pro" data-en="Pro">Pro</div>
+          <div class="price-value">$6<span data-ru="/мес" data-en="/mo">/мес</span></div>
           <ul class="price-list">
-            <li>Everything in Free</li>
-            <li>Unlimited profiles</li>
-            <li>Priority updates</li>
-            <li>24/7 Discord support</li>
+            <li data-ru="Неограниченные профили" data-en="Unlimited profiles">Неограниченные профили</li>
+            <li data-ru="Приоритетные обновления" data-en="Priority updates">Приоритетные обновления</li>
+            <li data-ru="Полный Stealth" data-en="Full Stealth">Полный Stealth</li>
+            <li data-ru="24/7 поддержка" data-en="24/7 Support">24/7 поддержка</li>
           </ul>
-          <a href="#download" class="btn btn-primary btn-block">Get Pro</a>
+          <a href="#download" class="btn btn-primary btn-block" data-ru="Купить Pro" data-en="Get Pro">Купить Pro</a>
         </div>
         <div class="price-card reveal">
-          <div class="price-name">Lifetime</div>
-          <div class="price-value">$25<span>/once</span></div>
+          <div class="price-name" data-ru="Lifetime" data-en="Lifetime">Lifetime</div>
+          <div class="price-value">$45<span data-ru="/разово" data-en="/once">/разово</span></div>
           <ul class="price-list">
-            <li>Everything in Pro</li>
-            <li>Pay once</li>
-            <li>Early access to new features</li>
+            <li data-ru="Всё из Pro" data-en="Everything in Pro">Всё из Pro</li>
+            <li data-ru="Пожизненные обновления" data-en="Lifetime updates">Пожизненные обновления</li>
           </ul>
-          <a href="#download" class="btn btn-outline btn-block">Buy Lifetime</a>
+          <a href="#download" class="btn btn-outline btn-block" data-ru="Купить Lifetime" data-en="Buy Lifetime">Купить Lifetime</a>
         </div>
       </div>
     </div>
@@ -181,40 +190,34 @@
   <section class="faq" id="faq">
     <div class="wrap">
       <div class="section-head reveal">
-        <div class="eyebrow">FAQ</div>
-        <h2>Common questions</h2>
+        <div class="eyebrow" data-ru="FAQ" data-en="FAQ">FAQ</div>
+        <h2 data-ru="Часто задаваемые вопросы" data-en="Frequently Asked Questions">Часто задаваемые вопросы</h2>
       </div>
       <div class="accordion reveal">
         <details class="acc-item" open>
-          <summary>What systems does this run on?</summary>
-          <p>Windows 10 and 11, x64 and ARM64. Requires .NET 8 — the loader will prompt you if it's missing.</p>
+          <summary data-ru="Какие читы поддерживаются?" data-en="Which cheats are supported?">Какие читы поддерживаются?</summary>
+          <p data-ru="Neverlose, Skeet, Gamesense, OneTap и большинство других популярных HVH читов." data-en="Neverlose, Skeet, Gamesense, OneTap and most popular HVH cheats.">Neverlose, Skeet, Gamesense, OneTap и большинство других популярных HVH читов.</p>
         </details>
         <details class="acc-item">
-          <summary>Do I need to install anything?</summary>
-          <p>No. Unzip the archive, run the executable — profiles and settings live right next to it.</p>
+          <summary data-ru="Работает ли на Faceit?" data-en="Does it work on Faceit?">Работает ли на Faceit?</summary>
+          <p data-ru="Да, но результат сильно зависит от самого чита и твоего Anti-Aim." data-en="Yes, but success depends on the cheat and your Anti-Aim.">Да, но результат сильно зависит от самого чита и твоего Anti-Aim.</p>
         </details>
         <details class="acc-item">
-          <summary>How does auto-update work?</summary>
-          <p>On launch, nadeloader checks the server version and only downloads the files that changed.</p>
-        </details>
-        <details class="acc-item">
-          <summary>Can I cancel a Pro subscription?</summary>
-          <p>Yes, anytime from your account — access stays active until the end of the paid period.</p>
+          <summary data-ru="Как работает автообновление?" data-en="How does auto-update work?">Как работает автообновление?</summary>
+          <p data-ru="При запуске автоматически проверяет и скачивает актуальные версии читов." data-en="Automatically checks and downloads latest cheat versions on launch.">При запуске автоматически проверяет и скачивает актуальные версии читов.</p>
         </details>
       </div>
     </div>
   </section>
 
-  <!-- DOWNLOAD CTA -->
+  <!-- CTA -->
   <section class="cta" id="download">
     <div class="wrap cta-inner reveal">
-      <h2>Ready to try it?</h2>
-      <p class="muted">Grab the latest build v3.0.2 — 4.6 MB, installs in 10 seconds.</p>
-      <a href="#" class="btn btn-primary btn-lg" id="downloadBtn">Download nadeloader.zip</a>
-      <div class="mono small-muted">SHA-256 listed on the release page · Windows 10/11</div>
+      <h2 data-ru="Готов уничтожать на HVH?" data-en="Ready to destroy on HVH?">Готов уничтожать на HVH?</h2>
+      <p class="muted" data-ru="v3.0.2 • 5.9 МБ • Windows 10/11" data-en="v3.0.2 • 5.9 MB • Windows 10/11">v3.0.2 • 5.9 МБ • Windows 10/11</p>
+      <a href="#" class="btn btn-primary btn-lg" id="downloadBtn" data-ru="Скачать nadeloader.zip" data-en="Download nadeloader.zip">Скачать nadeloader.zip</a>
     </div>
   </section>
-
 </main>
 
 <footer class="site-footer">
@@ -223,17 +226,27 @@
       <span class="brand-mark"></span>
       <span class="brand-name">nade<span>loader</span></span>
     </div>
-    <div class="footer-links">
-      <a href="#features">Features</a>
-      <a href="#pricing">Pricing</a>
-      <a href="#faq">FAQ</a>
-      <a href="#">GitHub</a>
-      <a href="#">Discord</a>
-    </div>
     <div class="muted small">© <span id="year"></span> Nadeloader</div>
   </div>
 </footer>
 
 <script src="js/script.js"></script>
+<script>
+// Полноценный переключатель языка
+function switchLanguage(lang) {
+    document.documentElement.lang = lang;
+    document.querySelectorAll('[data-ru]').forEach(el => {
+        const text = lang === 'ru' ? el.getAttribute('data-ru') : el.getAttribute('data-en');
+        if (text) el.textContent = text;
+    });
+
+    document.querySelectorAll('.lang-btn').forEach(btn => {
+        btn.classList.toggle('active', btn.textContent.toLowerCase() === lang);
+    });
+}
+
+// Инициализация
+document.getElementById('year').textContent = new Date().getFullYear();
+</script>
 </body>
 </html>
