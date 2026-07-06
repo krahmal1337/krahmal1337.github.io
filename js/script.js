@@ -69,7 +69,7 @@ window.addEventListener('resize', syncClipImageWidth);
 
 /* ---- Scrolling tab title ---- */
 (function(){
-  const baseText = 'NADELOADER — fast, lightweight, always up to date • ';
+  const baseText = 'nadeloader reloaded';
   const text = baseText.repeat(2); // repeat so the scroll loops smoothly
   let pos = 0;
   const speedMs = 260;
