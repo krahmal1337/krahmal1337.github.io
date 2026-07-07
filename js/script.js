@@ -53,7 +53,7 @@ const i18n = {
     faq_a4: "Absolutely! Pull requests, issues, and feature suggestions are welcome. Check the GitHub repo to get started.",
     cta_title: "Ready to try it?",
     cta_desc: "Grab the latest build v3.0.2 — 4.6 MB, installs in 10 seconds.",
-    cta_btn: "Download nadeloader.zip",
+    cta_btn: "Download NadeLoader",
     cta_hash: "SHA-256 listed on the release page · Windows 10/11",
     footer_oss: "open source",
   },
@@ -111,7 +111,7 @@ const i18n = {
     faq_a4: "Конечно! Pull request'ы, issues и предложения приветствуются. Заходите на GitHub-репозиторий чтобы начать.",
     cta_title: "Готовы попробовать?",
     cta_desc: "Последняя сборка v3.0.2 — 4.6 МБ, установка за 10 секунд.",
-    cta_btn: "Скачать nadeloader.zip",
+    cta_btn: "Скачать Nadeloader",
     cta_hash: "SHA-256 указан на странице релиза · Windows 10/11",
     footer_oss: "открытый код",
   }
