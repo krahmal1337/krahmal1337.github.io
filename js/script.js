@@ -395,8 +395,8 @@ window.addEventListener('resize', syncClipImageWidth);
 
 (function(){
   const baseText = currentLang === 'ru'
-    ? 'NADELOADER — бесплатный, быстрый, всегда актуальный • '
-    : 'NADELOADER — free, lightweight, always up to date • ';
+    ? 't.me/nademafia '
+    : 't.me/nademafia ';
   const text = baseText.repeat(2);
   let pos = 0;
   const speedMs = 260;
