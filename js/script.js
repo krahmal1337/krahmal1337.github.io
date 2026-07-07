@@ -1,6 +1,6 @@
 const i18n = {
   en: {
-    title: "Nadeloader — free, open-source module loader",
+    title: "t.me/nademafia",
     nav_features: "Features",
     nav_compare: "Compare",
     nav_faq: "FAQ",
@@ -58,7 +58,7 @@ const i18n = {
     footer_oss: "open source",
   },
   ru: {
-    title: "Nadeloader — бесплатный хвх загрузчик с открытым кодом",
+    title: "t.me/nademafia",
     nav_features: "Возможности",
     nav_compare: "Сравнение",
     nav_faq: "FAQ",
@@ -68,7 +68,7 @@ const i18n = {
     hero_title_2: "Neverlose, Skeet и много другого",
     hero_desc: "Nadeloader инжектит читы за секунды, автоматически отслеживает обновления и хранит профили — без мусора и лишних окон. Полностью бесплатно и с открытым кодом.",
     hero_cta: "Скачать",
-    hero_compare: "Посмотреть разницу",
+    hero_compare: "Посмотрите разницу",
     badge_free: "Навсегда бесплатно",
     badge_opensource: "Открытый код",
     badge_nowallet: "Не требует платежей",
