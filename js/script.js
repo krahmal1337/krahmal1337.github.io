@@ -334,13 +334,6 @@ document.querySelectorAll('.feature-card, .cheat-card').forEach(card => {
   });
 });
 
-document.getElementById('downloadBtn').addEventListener('click', (e) => {
-  e.preventDefault();
-  alert(currentLang === 'ru'
-    ? 'Замените это уведомление на ссылку на ваш релиз (например, GitHub Releases .zip).'
-    : 'Replace this alert with a real link to your release (e.g. a GitHub Releases .zip / .exe).');
-});
-
 const revealEls = document.querySelectorAll('.reveal, .reveal-left, .reveal-right, .reveal-scale');
 const revealObserver = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
